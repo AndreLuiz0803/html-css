@@ -1,0 +1,32 @@
+div{
+    display: inline-block;
+    background-color: lightslategrey;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+/*#d1{
+    background-color: #7A1FC5;
+}
+div#d2{
+    background-color: #ADF418;
+}
+div#d3{
+    background-color: #FFCA19;
+}
+div#d4{
+    background-color: #F30516;
+}*/
+div#d1:hover{
+    background-color: #7A1FC5;
+}
+div#d2:hover{
+    background-color: #ADF418;
+}
+div#d3:hover{
+    background-color: #FFCA19;
+}
+div#d4:hover{
+    background-color: #F30516;
+}

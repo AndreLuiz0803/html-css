@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&display=swap');
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: chartreuse;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(169, 78, 255);
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 30px;
+    color: rgb(255, 255, 255);
+}

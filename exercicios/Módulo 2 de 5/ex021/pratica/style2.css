@@ -1,0 +1,77 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+    }
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body{
+    background-color: #160A26;
+    margin: 0%;
+}
+nav{
+    padding: 15px;
+    text-align: center;
+    background-color: #280F48;
+    margin-left: 0;
+    margin-bottom: 60px;
+}
+nav > a{
+    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Anta', sans-serif;*/
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    padding-inline: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #6EEA33;
+}
+section.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 665px;
+    color: white;
+    background-color: #280F48;
+    padding: 10px;
+}
+#eps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p{
+    color: white;
+    background-color: #280F48;
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
+p:hover{
+    color: #6EEA33;
+}
+.content-cover{
+    text-align: center;
+}
+#cover{
+    width: 685px;
+}

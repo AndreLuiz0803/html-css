@@ -1,0 +1,15 @@
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+    color: azure;
+    background-color: crimson;
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+div:hover{
+    color: crimson;
+}

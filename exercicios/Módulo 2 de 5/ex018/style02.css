@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'JetBrainsM' ;
+    src: url('fonts/JetBrainsMono-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'JetBrainsR' ;
+    src: url('fonts/JetBrainsMonoNL-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'JetBrainsB' ;
+    src: url('fonts/JetBrainsMonoNL-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Japanese' ;
+    src: url('fonts/Japanese 3017.otf') format('opentype');
+}
+
+body{
+    background-color: rgb(17, 16, 17);
+}
+
+h1{
+    font-family: 'Japanese', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgb(160, 58, 255);
+}
+h2{
+    font-family: 'JetBrainsB', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: chartreuse;
+}
+p{
+    font-family: 'jetBrainsR', monospace;
+    font-weight: normal;
+    font-size: 18px;
+    color: azure;
+}

@@ -1,0 +1,86 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+    }
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body{
+    background-color: #160A26;
+    margin: 0%;
+}
+nav{
+    padding: 15px;
+    text-align: center;
+    background-color: #280F48;
+    margin-left: 0;
+    margin-bottom: 60px;
+}
+nav > a{
+    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Anta', sans-serif;*/
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    padding-inline: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #6EEA33;
+}
+div.items{
+    align-items: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.imgs{
+    width: 400px;
+    padding-inline: 30px;
+}
+.title{
+    width: 400px;
+    text-align: center;
+    padding: 5px;
+}
+.name{
+    width: 400px;
+    margin: 5px;
+    color: white;
+    background-color: #280F48;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.name:hover{
+    color: #6EEA33;
+}
+section.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    width: 1200px;
+    padding: 10px;
+    color: white;
+}
+h2{
+    text-align: center;
+    width: 1200px;
+    padding: 10px;
+    color: white;
+    background-color: #280F48;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

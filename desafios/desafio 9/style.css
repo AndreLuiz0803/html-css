@@ -1,0 +1,11 @@
+.titulo{
+    text-align: center;
+}
+.videos1{
+    align-items: center;
+    display: flex;    
+    justify-items: center;
+}
+.videos2{
+    align-items: center;
+}

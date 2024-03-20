@@ -1,0 +1,30 @@
+@charset "UTF-8"
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+body{
+    background-image: linear-gradient(to right, #6D08BA, #53088D, #330457, #1E0233);
+}
+main{
+    background-color: #A1F100;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #1E0233;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+h1{
+    color: #1E0233;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.eva01{
+    justify-content: flex-end;
+    width: 30%;
+    background-position: right boto;
+    background-attachment: fixed;
+}
