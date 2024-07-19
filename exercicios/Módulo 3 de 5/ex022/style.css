@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+div#bg-top{
+    width: 100%;
+    height: 300px;
+    background-image: url("images/A_PC_2560x1440_SungJinwoo_EN.jpg");
+
+}
+
+div.quadrado{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    color: gray;
+    border-radius: 10px;
+}
+
+div#q1{
+    background-color: aqua;
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom, skyblue, purple);
+}
+
+div#q3{
+    background-image: url("images/LEVEL_Photocard_Igris_EN.png");
+}
