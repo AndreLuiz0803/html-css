@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+}
+
+div#box-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+
+}
+nav > a{
+    background-color: black;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-bottom: 15px;
+
+}
+
+nav > a:hover{
+    color: white;
+}
+
+div#box-header > h1{
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60pt;
+    padding-bottom: 10px;
+}
+
+div#box-header > a{
+    color: white;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.format{
+    width: 220px;
+    margin-inline: 25px;
+
+}
+
+
+.sect-format{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    margin-inline: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+main > div > p{
+    padding-top: 10px;
+    font-size: 16pt;
+    color: white;
+}
+
+.imgs{
+    width: 220px;
+    height: 220px;
+}
+
+div > a{
+    color: black;
+    text-decoration: none;
+    font-size: 16pt;
+
+}
