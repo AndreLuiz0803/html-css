@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+:root{
+    --fonte1: "DM Serif Text", serif;
+    --fonte2: "Grey Qo", cursive; 
+    --fonte3: "Kalam", cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+html, body{
+    min-height: 100vh;
+    background-color: rgb(245, 244, 244);
+}
 
 header{
     display: flex;
@@ -12,86 +27,66 @@ header{
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 200px;
+    height: 180px;
 }
 
-body{
-    background-color: white;
-}
-
-main{
-    width: 1300px;
-    margin: auto;
-}
-
-div#box-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav{
-    display: flex;
-    background-color: black;
-
-}
-nav > a{
-    background-color: black;
-    text-align: center;
+header > a{
     color: red;
+    font-family: var(--fonte2);
+    font-size: 75pt;
+    font-weight: 600;
+    padding-bottom: 30px;
     text-decoration: none;
-    margin-left: 50px;
-    margin-bottom: 15px;
-
 }
 
-nav > a:hover{
+header > a:hover{
     color: white;
 }
 
-div#box-header > h1{
-    color: red;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 60pt;
-    padding-bottom: 10px;
+div#music-name{
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    margin-top: 50px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 400px;
 }
 
-div#box-header > a{
+div#music-name:hover{
+    transform: scale(1.05);
+}
+
+div#music-name > a{
     color: white;
-    font-size: 20pt;
-    margin-bottom: 20px;
+    text-decoration: none;
 }
 
 #lyrics{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 100%;
 }
 
 .text-not-bg{
+    font-family: var(--fonte3);
+    font-weight: 600;
     font-size: 18pt;
     line-height: 3.2rem;
-    margin: 40px 50px;
-    text-align: left;
-}
-
-.text-not-bg-pt{
-    font-size: 18pt;
-    line-height: 3.2rem;
-    margin: 40px 50px;
+    margin: 40px 100px;
     text-align: left;
 }
 
 .text-bg{
+    font-family: var(--fonte3);
+    font-weight: 600;
     background-color: rgba(0, 0, 0, 0.733);
     border-radius: 10px;
     background-size: 100%;
     color: white;
     font-size: 18pt;
     line-height: 3.2rem;
-    padding: 40px 50px;
+    padding: 40px 100px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
 }
 
 #lyrics2{
@@ -100,8 +95,7 @@ div#box-header > a{
     background-image: url(img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
-
+    background-position: right center;
 }
 
 #lyrics3{
@@ -110,7 +104,7 @@ div#box-header > a{
     background-image: url(img/bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: right center;
 
 }
 
@@ -120,7 +114,7 @@ div#box-header > a{
     background-image: url(img/bg3.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: right center;
 }
 
 #lyrics-hollowed2{
@@ -129,24 +123,23 @@ div#box-header > a{
     background-image: url(img/bg4.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: right center;
+    margin-bottom: 40px;
 }
 
 #lyrics-addict{
     display: flex;
     flex-direction: column;
     background-image: url(img/bg5.jpg);
-    border-radius: 10px;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: right center;
 }
 
 #lyrics-addict2{
     display: flex;
     flex-direction: column;
     background-image: url(img/bg6.jpg);
-    border-radius: 10px;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -156,8 +149,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: black;
-    height: 60px;
+    height: 50px;
     border-top: 1px red solid;
 }
 
@@ -165,7 +159,8 @@ footer > p{
     color: white;
 }
 
-#name-footer{
+footer > p > a{
     color: red;
     text-decoration: none;
+    margin: 0;
 }

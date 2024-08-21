@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --fonte1: "DM Serif Text", serif;
+    --fonte2: "Grey Qo", cursive; 
+    --fonte3: "Playfair Display", serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+    background-color: rgb(245, 244, 244);
+}
 
 
 header{
@@ -12,14 +28,13 @@ header{
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 200px;
+    height: 150px;
 }
 
-div#box-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header > h1{
+    color: red;
+    font-family: var(--fonte2);
+    font-size: 80pt;
 }
 
 nav{
@@ -29,6 +44,8 @@ nav{
 }
 nav > a{
     background-color: black;
+    font-family: var(--fonte1);
+    font-weight: 400;
     text-align: center;
     color: red;
     text-decoration: none;
@@ -41,19 +58,6 @@ nav > a:hover{
     color: white;
 }
 
-div#box-header > h1{
-    color: red;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 60pt;
-    padding-bottom: 10px;
-}
-
-div#box-header > a{
-    color: white;
-    font-size: 20pt;
-    margin-bottom: 20px;
-}
-
 main{
     display: flex;
     justify-content: center;
@@ -64,10 +68,13 @@ main{
 
 .format{
     width: 220px;
-    margin-inline: 25px;
-
+    margin-inline: 35px;
 }
 
+.format :hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
 
 .sect-format{
     display: flex;
@@ -78,13 +85,14 @@ main{
     margin-inline: 50px;
     text-align: center;
     margin-bottom: 40px;
-
 }
 
-main > div > p{
+main > section > div > a{
+    font-family: var(--fonte1);
     padding-top: 10px;
     font-size: 16pt;
-    color: white;
+    color: black;
+    font-weight: 400;
 }
 
 .imgs{
@@ -97,4 +105,22 @@ div > a{
     text-decoration: none;
     font-size: 16pt;
 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    border-top: 1px red solid;
+}
+
+footer > p{
+    color: white;
+}
+
+footer > p > a{
+    color: red;
+    text-decoration: none;
 }
