@@ -24,13 +24,22 @@
             margin-bottom: 100px;
         }
 
+        caption{
+            margin-bottom: 7px;
+            font-size: 1.5em;
+        }
+        
+        tbody > tr:nth-child(2n){
+            background-color: rgb(102, 102, 102);
+        }
+
         td, th{
             border: 1px solid white;
             padding: 7px;
         }
 
         thead, tfoot{
-            background-color: rgb(196, 196, 196);
+            background-color: rgb(221, 221, 221);
             color: black;
         }
 
@@ -40,13 +49,14 @@
     </style>
 </head>
 <body>
-    <h2>Times com mais títulos no século XXI</h2>
+    <!--<h2>Times com mais títulos no século XXI</h2>-->
     <table>
+        <caption>Times com mais títulos no século XXI</caption>
         <thead>
             <tr>
-                <th>Equipe</th>
-                <th>Total de titulos</th>
-                <th>Ano de fundação</th>
+                <th scope="col">Equipe</th>
+                <th scope="col">Total de titulos</th>
+                <th scope="col">Ano de fundação</th>
             </tr>
         </thead>
 
@@ -85,7 +95,7 @@
 
         <tfoot>
             <tr>
-                <td><strong>Total de titulos</strong></td>
+                <th scope="row"><strong>Total de titulos</strong></th>
                 <td class="numero">47</td>
             </tr>
 
@@ -93,12 +103,12 @@
     </table>
 
 <!-- Campeões da libertadores -->
-    <h2>Últimos 23 campeões da Libertadores</h2>
     <table>
+        <caption>Últimos 23 campeões da Libertadores</caption>
         <thead>
             <tr>
-                <th>Equipe</th>
-                <th>Ano</th>
+                <th scope="col">Equipe</th>
+                <th scope="col">Ano</th>
             </tr>
         </thead>
 
@@ -226,7 +236,7 @@
 
         <tfoot>
             <tr>
-                <td><strong>Equipe com mais títulos</strong></td>
+                <th scope="row"><strong>Equipe com mais títulos</strong></th>
                 <td>Boca Juniors (ARG)</td>
             </tr>
 
