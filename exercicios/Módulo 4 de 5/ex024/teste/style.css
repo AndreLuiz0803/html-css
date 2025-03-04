@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span{
+    color: blueviolet;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin: 10px;
+}
+
+form p{
+    margin-bottom: 3px;
+}
+
+form input{
+    width: 400px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input:hover{
+    border: 2px solid blueviolet;
+}
+
+.btn-create{
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.btn-create:hover{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-create:active{
+    transform: scale(0.95);
+}
