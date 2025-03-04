@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+</head>
+
+<style>
+
+    caption{
+        font-size: 1.3em;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    table{
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+    th, td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .gray{
+        background-color: gray;
+        color: white;
+    }
+    .gray-center{
+        text-align: center;
+        background-color: gray;
+        color: white;
+    }
+    .white {
+        text-align: center;
+    }
+    .white-center{
+        text-align: center;
+    }
+</style>
+<body>
+
+    <table>
+        <colgroup>
+            <col class="white">
+            <col class="gray-center">
+            <col class="white">
+            <col class="gray">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th class="gray-center" scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th class="gray" scope="col">Profissão</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Julia</td>
+                <td class="gray-center">F</td>
+                <td class="white-center">26</td>
+                <td class="gray">Arquiteta</td>
+            </tr>
+
+            <tr>
+                <td>João Paulo</td>
+                <td class="gray-center">M</td>
+                <td class="white-center">24</td>
+                <td class="gray">Engenheiro Civil</td>
+            </tr>
+
+            <tr>
+                <td>André Luiz</td>
+                <td class="gray-center">M</td>
+                <td class="white-center">23</td>
+                <td class="gray">Programador</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

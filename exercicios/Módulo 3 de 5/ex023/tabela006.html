@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em telas pequenas</title>
+</head>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    table{
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    caption{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    th, td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    th{
+        background-color: rgba(0, 0, 0, 0.726);
+        color: white;
+    }
+
+    tr:nth-child(even){
+        background-color: rgb(228, 228, 228);
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .product{
+        text-align: left;
+    }
+
+    #container{
+        overflow-x: auto;
+    }
+</style>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam minus quas libero, dignissimos doloribus unde dicta quae harum voluptate, voluptatem, voluptatibus molestiae debitis placeat iusto beatae porro ullam natus.</p>
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="product">
+            </colgroup>
+            <caption>Tabelas responsivas</caption>
+        
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product">TV50"</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td class="product">Iphone 16</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td class="product">Samsung Galaxy S25</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td class="product">Motorola Edge 50</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td class="product">PlayStation 5</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td class="product">Xbox Series X</td>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        </table>
+    </div> 
+</body>
+</html>
