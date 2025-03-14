@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(18, 18, 32);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header-container{
+    background-color: rgb(18, 18, 32);
+    display: flex;
+    width: 100%;
+    height:8%;
+    padding: 10px 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav h1{
+    font-size: 2rem;
+    color: white;
+}
+
+nav h1:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.menu-itens{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    color: aqua;
+}
+
+.slider{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+
+.slider-content input{
+    display: none;
+}
+
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+
+.slide-box img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 20%;
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 41%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid aqua;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: aqua;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: aqua;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: aqua;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: aqua;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url(img/bg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.13);
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    font-family: Poppins, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.4em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+input{
+    background: transparent;
+    border: 1px solid #efe2f891;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+    padding-left: 10px;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: #efe2f891;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #AFEFD9 ;
+    outline: 0;
+}
+
+input.email{
+    border-radius: 5px;
+    margin-bottom: 25px;
+    height: 35px;
+}
+
+a{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+input#entrar{
+    background-color: #3db9c2;
+    border: 0;
+    font-family: Poppins, Helvetica, sans-serif;
+    height: 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+input#entrar:hover{
+    border: 1px solid #AFEFD9;
+}
+
+input#entrar:active{
+    transform: scale(0.98);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p#no-cadastro{
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #EFE2F8;
+}

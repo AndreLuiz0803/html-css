@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 99vh;
+    height: 99vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+div#img-container{
+    width: 50vh;
+    height: 99vh;
+    background-size: cover;
+}
+
+img{
+    width: 100vh;
+}
+
+div#form-container{
+    height: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
