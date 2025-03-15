@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg: rgb(15, 16, 20);
+    --font: rgb(89, 94, 117);
+    --font2: rgb(208, 216, 252);
+    --color: rgb(55, 91, 236);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: roboto, Helvetica, sans-serif;
+}
+
+main{
+    height: 80vh;
+}
+
+footer{
+    width: 100%;
+    color: var(--font2);
+}
+
+#footer-content{
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    padding: 3rem 3.5rem;
+}
+
+#social-content{
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+#social-icons{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+
+#social-icons img{
+    width: 35px;
+}
+
+#social-icons img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+#blog-content h1, #products-content h1{
+    color: var(--font2);
+}
+
+#blog-content p, #products-content p, #subscribe-content p, #social-content p{
+    color: var(--font);
+    font-weight: 500;
+}
+
+#products-content{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+#subscribe-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+#subscribe-content form{
+    display: flex;
+    height: 100%;
+}
+
+#subscribe-content form input{
+    all: unset;
+    background-color: rgb(5, 4, 7);
+    width: 100%;
+    padding: .75rem;
+}
+
+#subscribe-content form button{
+    all: unset;
+    background-color: var(--color);
+    padding: 0px 1.25rem;
+    border-radius: 0px 4px 4px 0px;
+}
+
+#subscribe-content form button:hover{
+    cursor: pointer;
+}
+
+.bi-envelope{
+    color: var(--font2);
+    font-size: 1.5rem;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(5, 4, 7);
+    color: var(--font);
+}
+
+@media screen and (max-width: 900px) {
+    #footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
