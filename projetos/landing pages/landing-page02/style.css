@@ -22,7 +22,6 @@ header{
     align-items: center;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.226);
     padding: 1rem 3rem;
-
 }
 
 span{
@@ -58,6 +57,7 @@ main{
     height: 100%;
     padding: 5rem;
     gap: 4rem;
+    margin: 2rem;
 }
 
 div.imagem{
@@ -133,4 +133,22 @@ div.texto button:hover{
         gap: 0;
     }
 
+}
+
+@media screen and (max-height: 800px){
+
+    main{
+        width: 100%;
+    }
+    div.texto{
+        width: 100%;
+    }
+
+    div.imagem{
+        width: 100%;
+    }
+
+    .imagem img{
+        width: 100%;
+    }
 }
