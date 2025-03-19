@@ -6,33 +6,36 @@
     <title>HOME</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
 
 </head>
 <body>
-
     <header>
-        <h1>Burger <span>Vibes</span></h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href=""><i class='bx bx-search'></i></a></li>
+        <nav class="navigation">
+            <a class="logo">Burger <span>Vibes</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href=""><i class='bx bx-search'></i></a></li>
             </ul>
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
         </nav>
     </header>
 
     <main>
-
-        <div class="imagem">
-            <img src="img/burger.png" alt="Burger">
-        </div>
-
-        <div class="texto">
-            <h2>Sabor Incomparável, <span>Qualidade</span> em Cada Mordida!</h2>
-            <p>Na <span>Burger Vibes</span>, preparamos hambúrgueres artesanais com ingredientes frescos e de qualidade, para oferecer uma experiência única a cada cliente. Venha saborear o verdadeiro prazer em forma de hambúrguer!</p>
-            <button>Faça seu pedido</button>
-        </div>
+        <section class="home">
+            <div class="home-imagem">
+                <img src="img/burger.png" alt="Burger">
+            </div>
+            <div class="home-texto">
+                <h2>Sabor Incomparável, <span>Qualidade</span> em Cada Mordida!</h2>
+                <p>Na <span>Burger Vibes</span>, preparamos hambúrgueres artesanais com ingredientes frescos e de qualidade, para oferecer uma experiência única a cada cliente. Venha saborear o verdadeiro prazer em forma de hambúrguer!</p>
+                <button>Faça seu pedido</button>
+            </div>
+        </section>
     </main>
     
 </body>
