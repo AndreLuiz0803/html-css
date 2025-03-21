@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px 40px;
+            font-family: poppins, Helvetica, sans-serif;
+            background-color: rgb(5, 5, 12);
+            height: 100vh;
+            width: 100vw;
+        }
+        body h1{
+            color: white;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 10px;
+            width: 300px;
+        }
+        form fieldset{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(9, 9, 26);
+            color: rgb(169, 169, 223);
+        }
+
+        .plataforma-content{
+            display: flex;
+            gap: 1rem;
+        }
+
+        .games-content{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: .5rem;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .btn-enviar{
+            all: unset;
+            color: white;
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .btn-enviar:hover{
+            background-color: rgb(21, 21, 59);
+            transition: .5s;
+        }
+        .btn-limpar{
+            all: unset;
+            color: white;
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .btn-limpar:hover{
+            background-color: rgb(209, 45, 45);
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Plataforma favorita</legend>
+                <section class="plataforma-content">
+                    <div class="checkbox">
+                        <input type="radio" name="console" id="ixbox"> <label for="ixbox">Xbox</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="console" id="ips"> <label for="ips">PlayStation</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="console" id="ipc"> <label for="ipc">PC</label>
+                    </div>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>Franquias de jogos favoritas</legend>
+                <div class="games-content">
+                    <div>
+                        <input type="checkbox" name="ac" id="iac"> <label for="iac">Assasins Creed</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="farcry" id="ifarcry"> <label for="ifarcry">Far Cry</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="gta" id="igta"> <label for="igta">GTA</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ff" id="iff"> <label for="iff">Final Fantasy</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="btns">
+                <input class="btn-enviar" type="submit" value="Enviar">
+                <input class="btn-limpar" type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

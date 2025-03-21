@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(9, 5, 10);
+            font-family: poppins, Helvetica, sans-serif;
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 1rem;
+        }
+        main h1{
+            color: white;
+        }
+        main form{
+            width: 350px;
+        }
+        main form fieldset{
+            display: flex;
+            background-color: rgb(78, 46, 109);
+            padding: 20px;
+            border: 2px solid rgb(140, 84, 196);
+            border-radius: 10px;
+            gap: 1rem;
+        }
+        main form fieldset legend{
+            color: white;
+            padding: 0 5px;
+        }
+        .input-content-level{
+            width: 100%;
+        }
+        .input-content .color{
+            all: unset;
+            width: 40px;
+            height: 40px;
+        }
+        .btns{
+            display: flex;
+            gap: 1rem;
+        }
+        #btn-enviar{
+            all: unset;
+            background-color: rgb(78, 46, 109);
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #btn-enviar:hover{
+            background-color: rgb(114, 68, 160);
+            transition: all .3s linear;
+        }
+        #btn-limpar{
+            all: unset;
+            background-color: rgb(156, 61, 61);
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #btn-limpar:hover{
+            background-color: rgb(201, 75, 75);
+            transition: all .3s linear;
+        }
+        #nivel{
+            width: 100%;
+        }
+        #format-level{
+            display: flex;
+            flex-direction: column;
+        }
+        #format-level p{
+            font-size: .8rem;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 2px;
+        }
+        .levels{
+            display: flex;
+            justify-content: space-between;align-items: center;
+            text-align: center;
+            margin-top: -10px;
+            width: 100%;
+        }
+        #nivel {
+            -webkit-appearance: none;
+            appearance: none;
+            display: inline-block;
+            width: 100%;
+            height: 0.5em;
+            position: relative;
+            left: 0;
+            border-radius: 5px;
+            background-color: rgb(140, 84, 196);
+            outline: none;
+        }
+        #nivel::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        border: none;
+        
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgb(243, 203, 255);
+        }
+
+        #idfile{
+            display: none;
+        }
+        #label-file{
+            background-color: rgb(140, 84, 196);
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 10px
+        }
+        #label-file:hover{
+            background-color: rgb(114, 68, 160);
+            transition: .3s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplos de Formulário</h1>
+        <form action="cadastro.php">
+            <fieldset class="content-color">
+                <legend>Cores</legend>
+                <div class="input-content">
+                    <input class="color" type="color" id="i"><label for="i"></label>
+                </div>
+                <div class="input-content">
+                    <input class="color" type="color" id="i"><label for="i"></label>
+                </div>
+                <div class="input-content">
+                    <input class="color" type="color" id="i"><label for="i"></label>
+                </div>
+            </fieldset>
+        </form>
+        <form action="cadastro.php">
+            <fieldset id="format-level">
+                <legend>Nivel de satisfação</legend>
+                <div class="input-content-level">
+                    <input type="range" min="1" max="3" id="nivel"><label for="nivel"></label>
+                </div>
+                <div class="levels">
+                    <p>LOW</p>
+                    <p>MIDDLE</p>
+                    <p>HIGH</p>
+                </div>
+            </fieldset>
+        </form>
+        <form action="cadastro.php">
+            <fieldset id="format-level">
+                <legend>Enviar arquivo</legend>
+                <div class="input-content-file">
+                    <input type="file" id="idfile"><label id="label-file" for="idfile">Escolher arquivo</label>
+                </div>
+            </fieldset>
+        </form>
+        <div class="btns">
+            <input id="btn-enviar" type="submit" value="Enviar">
+            <input id="btn-limpar" type="reset" value="Limpar">
+        </div>
+    </main>
+    
+</body>
+</html>
